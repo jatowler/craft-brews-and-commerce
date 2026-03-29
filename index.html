@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Craft Brew & Commerce</title>
+  <meta name="description" content="A creator crawl through downtown Boise: walk, talk, and build over Boise's best beer." />
+  <meta property="og:title" content="Craft Brew & Commerce" />
+  <meta property="og:description" content="A creator crawl through downtown Boise." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero-poster.png" />
+  <meta name="theme-color" content="#400561" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="eyebrow" id="conference-name">Creator Week Boise</div>
+    <nav class="top-nav">
+      <a href="#details">Details</a>
+      <a href="#route">Route</a>
+      <a href="#rsvp">RSVP</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="kicker">Pre-conference side event</p>
+        <h1 id="event-title">Craft Brew &amp; Commerce</h1>
+        <p class="subtitle" id="event-subtitle">A Creator Crawl</p>
+        <p class="dek" id="hero-description">A small group of creators walking between breweries, sharing what we&rsquo;re building, what&rsquo;s working, and what&rsquo;s next.</p>
+        <div class="hero-meta">
+          <div>
+            <span class="meta-label">When</span>
+            <span class="meta-value" id="hero-date">Date TBD</span>
+          </div>
+          <div>
+            <span class="meta-label">Where</span>
+            <span class="meta-value" id="hero-location">Downtown Boise</span>
+          </div>
+          <div>
+            <span class="meta-label">Format</span>
+            <span class="meta-value">3 brewery stops · 2 hours</span>
+          </div>
+        </div>
+        <div class="cta-row">
+          <a class="button primary" href="#rsvp">RSVP now</a>
+          <a class="button secondary" id="calendar-button" href="#">Add to calendar</a>
+          <a class="button tertiary" id="map-button" href="#" target="_blank" rel="noopener">Open map</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/hero-poster.png" alt="Craft Brew & Commerce event poster" />
+      </div>
+    </section>
+
+    <section class="section shell" id="details">
+      <div class="section-intro">
+        <p class="section-kicker">The pitch</p>
+        <h2>Not networking. A moving conversation.</h2>
+      </div>
+      <div class="two-col prose-grid">
+        <p>This is a creator-native micro-experience for people building something real. We&rsquo;ll meet downtown, grab a first pint, and then move together through a compact Boise route built for conversation instead of logistics. No panels. No awkward badge small talk. Just builders talking to builders.</p>
+        <p>The structure is intentionally light: one drink or flight per stop, roughly twenty-five minutes at each brewery, and a steady prompt that gets people talking about their actual work. Everyone pays their own tab. Comfortable shoes matter more than business cards.</p>
+      </div>
+      <div class="detail-cards">
+        <article class="detail-card">
+          <h3>Who it&rsquo;s for</h3>
+          <p>Creators, founders, writers, developers, operators, and curious builders who want a sharper conversation than the hotel hallway usually delivers.</p>
+        </article>
+        <article class="detail-card">
+          <h3>Conversation arc</h3>
+          <p>Stop 1: what are you building right now? Stop 2: what&rsquo;s working? Stop 3: what&rsquo;s next? Simple prompts, better conversations.</p>
+        </article>
+        <article class="detail-card">
+          <h3>Time discipline</h3>
+          <p>Designed for two hours, expandable to three only if the group is genuinely rolling. Tight enough to feel curated, not chaotic.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="route">
+      <div class="section-intro">
+        <p class="section-kicker">The route</p>
+        <h2>Compact, walkable, and actually downtown.</h2>
+      </div>
+      <div class="route-layout">
+        <ol class="route-list" id="route-list"></ol>
+        <aside class="route-panel">
+          <div class="route-panel-box">
+            <p class="panel-label">Quick links</p>
+            <a class="inline-link" id="route-map-link" href="#" target="_blank" rel="noopener">Open full route in Google Maps</a>
+            <a class="inline-link" id="join-late-link" href="#" target="_blank" rel="noopener">Late? Jump to the current stop</a>
+          </div>
+          <div class="route-panel-box">
+            <p class="panel-label">Expected timing</p>
+            <ul>
+              <li>Gather + first pour: 25 min</li>
+              <li>Walk + second stop: 25 min</li>
+              <li>Walk + final stop: 30 min</li>
+              <li>Buffer for drifting genius: 20 min</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section shell" id="rsvp">
+      <div class="section-intro">
+        <p class="section-kicker">Reserve your spot</p>
+        <h2>A matched RSVP experience for Kit.</h2>
+      </div>
+      <div class="rsvp-layout">
+        <div class="rsvp-copy">
+          <p>Use the styled form below as your visual target. In production, replace the placeholder block with your Kit embed code so signups flow directly into your event tag and automations. Kit&rsquo;s form builder provides embeddable HTML from <em>Grow → Landing Pages &amp; Forms → Embed</em>. citeturn141752search3</p>
+          <div class="mini-checklist">
+            <p><strong>Recommended Kit setup</strong></p>
+            <p>Form name: <em>Craft Brew &amp; Commerce RSVP</em>. Fields: first name, email, and optional “What are you building?” Create a tag like <em>boise-crawl-2026</em> and trigger confirmation, day-of reminder, and post-event follow-up automations from that tag.</p>
+          </div>
+        </div>
+        <div class="form-shell">
+          <div class="form-card">
+            <div class="form-card-head">
+              <p class="form-kicker">RSVP</p>
+              <h3>Join the crawl</h3>
+              <p id="form-date-copy">Date TBD · Downtown Boise</p>
+            </div>
+            <div id="kit-form-slot">
+              <form class="styled-form" id="styled-fallback-form">
+                <label>
+                  First name
+                  <input type="text" name="first_name" placeholder="Jerry" />
+                </label>
+                <label>
+                  Email address
+                  <input type="email" name="email_address" placeholder="you@example.com" />
+                </label>
+                <label>
+                  What are you building?
+                  <textarea name="building" rows="4" placeholder="Optional, but useful."></textarea>
+                </label>
+                <button type="button" class="button primary block">RSVP with Kit</button>
+              </form>
+              <div class="embed-note">
+                <p><strong>Implementation note:</strong> replace this fallback form with your Kit inline HTML embed in <code>config.js</code>. The page styling will automatically frame it inside this card.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <div class="section-intro">
+        <p class="section-kicker">Useful extras</p>
+        <h2>Everything that makes the event feel finished.</h2>
+      </div>
+      <div class="extras-grid">
+        <article>
+          <h3>Calendar-ready</h3>
+          <p>The “Add to calendar” button generates a downloadable ICS file from your site configuration, so GitHub Pages or GitLab Pages can host the whole experience without any server work.</p>
+        </article>
+        <article>
+          <h3>Map links included</h3>
+          <p>Every stop has its own directions link, plus a full-route map for people who arrive late or peel off early.</p>
+        </article>
+        <article>
+          <h3>Deploy-anywhere static</h3>
+          <p>This build is plain HTML, CSS, and JavaScript. Drop it into any static host, point your new domain, and you are live.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <p id="footer-line">Craft Brew &amp; Commerce · Downtown Boise</p>
+    <p class="footer-small">Built for static hosting. Tuned for creator conferences.</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
