@@ -19,8 +19,9 @@ A very simple static landing page for the Craft Brews + Commerce Boise meetup.
 - Stop One: 10 Barrel Brewing, 4pm-5pm
 - Stop Two: Boise Brewing, 5pm-6pm
 - Optional Stop Three: White Dog Brewing, after dinner
+- Host: Jerry Towler
 
-The hero button scrolls to the stop details. Each stop includes menu and/or directions links.
+The read-more link scrolls to the stop details. Each stop includes menu and/or directions links.
 
 ## Preview Locally
 
