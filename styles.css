@@ -128,9 +128,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 18px;
-  background:
-    linear-gradient(rgba(16, 17, 15, 0.78), rgba(16, 17, 15, 0.78)),
-    url("assets/hero-kegs.png") center 70% / cover;
+  background: var(--black);
   color: #f7f5ef;
   font-size: 1.05rem;
   font-weight: 800;
@@ -247,16 +245,12 @@ h1 {
   border-top: 1px solid rgba(17, 35, 0, 0.12);
 }
 
-.host-mark {
+.host-photo {
   width: clamp(92px, 11vw, 150px);
   aspect-ratio: 1;
-  display: grid;
-  place-items: center;
+  height: auto;
+  object-fit: cover;
   background: var(--olive-soft);
-  color: #f7f5ef;
-  font-family: "League Gothic", Impact, sans-serif;
-  font-size: clamp(3.8rem, 7vw, 6.6rem);
-  line-height: 1;
 }
 
 .host-copy h2 {
@@ -386,7 +380,7 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .host-mark {
+  .host-photo {
     width: 112px;
   }
 

@@ -10,6 +10,7 @@ A very simple static landing page for the Craft Brews + Commerce Boise meetup.
 - `assets/stop-one-food.png` - Stop One image
 - `assets/stop-two-dinner.png` - Stop Two image
 - `assets/stop-three-taps.png` - Optional Stop Three image
+- `assets/headshot-jerry-travel.jpg` - host headshot
 - `assets/og-social.png` - 1200x630 Open Graph / social share image
 
 ## Event Content
