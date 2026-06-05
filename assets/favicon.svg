@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Craft Brews + Commerce">
+  <rect width="64" height="64" fill="#112300"/>
+  <circle cx="32" cy="32" r="20" fill="#e7c77e"/>
+  <path d="M24 21h11c6 0 10 4 10 10s-4 10-10 10H24V21Zm8 7v6h3c2 0 3-1 3-3s-1-3-3-3h-3Z" fill="#112300"/>
+  <path d="M18 47h28v5H18z" fill="#f3f1ec"/>
+</svg>

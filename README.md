@@ -1,40 +1,42 @@
-# Craft Brew & Commerce static site
+# Craft Brews + Commerce
 
-This is a deploy-anywhere static event page designed for GitHub Pages or GitLab Pages.
+A very simple static landing page for the Craft Brews + Commerce Boise meetup.
 
-## What is included
+## Files
 
-- `index.html` — the page
-- `styles.css` — the full typographic design system
-- `config.js` — all event settings in one place
-- `app.js` — renders the route and generates the downloadable calendar invite
-- `assets/hero-poster.png` — the matching poster image
+- `index.html` - the complete one-page landing page
+- `styles.css` - layout, typography, responsive rules, and focus states
+- `assets/hero-kegs.png` - hero background
+- `assets/stop-one-food.png` - Stop One image
+- `assets/stop-two-dinner.png` - Stop Two image
+- `assets/stop-three-taps.png` - Optional Stop Three image
+- `assets/og-social.png` - 1200x630 Open Graph / social share image
 
-## Fast setup
+## Event Content
 
-1. Open `config.js`.
-2. Edit the conference name, date label, start/end ISO timestamps, and any route notes.
-3. Paste your Kit inline embed into `formEmbedHtml`.
-4. Deploy the folder to GitHub Pages or GitLab Pages.
-5. Point your domain at the site.
+- Date: Tuesday, June 9
+- Time: 4PM-7PM
+- Stop One: 10 Barrel Brewing, 4pm-5pm
+- Stop Two: Boise Brewing, 5pm-6pm
+- Optional Stop Three: White Dog Brewing, after dinner
 
-## Kit form instructions
+The hero button scrolls to the stop details. Each stop includes menu and/or directions links.
 
-Kit provides embeddable form HTML from **Grow → Landing Pages & Forms → Embed**. The page is already styled to visually frame that embed. Replace the placeholder fallback form by pasting the inline HTML into `formEmbedHtml` in `config.js`. The Kit help article on form embedding basics documents where to find those embed codes. citeturn141752search3
+## Preview Locally
 
-### Suggested Kit form settings
+Because this is plain HTML and CSS, opening `index.html` directly works. For a local HTTP preview:
 
-- Form name: `Craft Brew & Commerce RSVP`
-- Fields: first name, email, optional “What are you building?”
-- Tag: `boise-crawl-2026`
-- Automation ideas:
-  - confirmation email immediately
-  - reminder morning-of
-  - reminder one hour before
-  - follow-up email next day
+```sh
+python3 -m http.server 8123
+```
 
-## Brewery references used on the page
+Then open `http://127.0.0.1:8123/`.
 
-- Boise Brewing lists its address as **521 W Broad St, Boise, ID 83702** on its official site. citeturn141752search0turn141752search4
-- White Dog Brewing is listed at **705 W Fulton St, Boise, ID 83702** by a regional tourism listing, while its official site confirms the Boise location. citeturn141752search11turn141752search14
-- Payette Brewing lists its address as **733 S Pioneer St, Boise, ID 83702** on its official contact page. citeturn141752search2turn141752search18
+## Social Sharing
+
+The page includes Open Graph and Twitter card metadata using `assets/og-social.png`.
+
+If the eventual hosting platform requires absolute share-image URLs, update these tags in `index.html` after the final domain is known:
+
+- `og:image`
+- `twitter:image`
